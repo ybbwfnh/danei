@@ -1,17 +1,26 @@
-<br>align='center'   排列=剧中
-<br>repository       仓库、版本哭
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
+1.创建git仓库
+    git init
+2.提交修改文件到暂存区
+    git add 文件名或者.
+3.撤回修改，=从暂存区拿回文件。
+    git checkout -- 文件名
+4.提交到暂存区
+    git commit -m "你想说到话"
+5.撤回已经提交到暂存区到文件。想再退回干净的话再执行第3步。
+    git reset HEAD 文件名
+
+
+    又到了小结时间。
+
+    场景1：当你改乱了工作区某个文件的内容，想直接丢弃工作区的修改时，用命令git checkout -- file。
+
+    场景2：当你不但改乱了工作区某个文件的内容，还添加到了暂存区时，想丢弃修改，分两步，第一步用命令git reset HEAD <file>，就回到了场景1，第二步按场景1操作。
+
+    场景3：已经提交了不合适的修改到版本库时，想要撤销本次提交，参考版本回退一节，不过前提是没有推送到远程库。
+
+
+6.删除文件,本地文件已经删除掉情况。
+    git rm file
+    git commit -m "delete file"
+7.误删文件，
+    git checkout -- file 相当于恢复文件。
