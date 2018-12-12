@@ -1,0 +1,130 @@
+第一天
+第一天<br>
+    行元素：不自动换行，宽度是文本宽度
+    块元素：自动折行，宽度是父级元素的宽度100%
+第3课<br>
+    标签<br>
+
+    第4课<br>
+    标记（Tag）又叫元素（Element）.<br>
+        单标记，<br>
+        双标记，成对的<br>
+    第5课<br>
+        属性<br>
+            空格，非必须。双引号隔开<br>
+
+    第6课<br>
+        文本标记<br>
+            <b>加粗标记< b ></b><br>
+            <strong>加粗标记< strong ></strong><br>
+            <em>倾斜标记< em ></em><i>也是倾斜标记< i ></i><br>
+            <del>删除标记< del></del> <br>
+            上标注，下标注。< sup>3<sup>32</sup> 下标注< SUP> H<sub>2</Sub>O<br>
+            <span>将来排版中，这个标签用的最多。< span ></span> </span>><br>
+            <h1>H1标题 块元素,且自动换行</h1>
+            <h2>H1标题块元素</h2>
+            <h3>H1标题块元素</h3>
+            <h4>H1标题块元素</h4>
+            <h5>H1标题块元素</h5>
+            <h6>H1标题块元素</h6>
+        <h1>第七课<h1>段落 块元素
+            <p align='lift'>段落居左</p>
+            <p align='right'>段落居右</p>
+            <p align='center'>段落居中</p>
+            <div>123123div</div>
+            <div>123123div</div>
+            <div>123123div</div>
+8.全角下的空格，可以在页面显示
+
+<br>第二天
+<br>Html 实体展示，w3c。
+<br>常用符号标记，背一下比较好。
+<br> > === &gt;
+<br> < === &lt;
+<br> ''=== &39;
+<br> ""=== &quot;
+<br> & === &amp;
+<br> 不间断空格 === &nbsp;
+<br> 版权 === &copy;
+<br> 商标 === &reg;
+<br>五.列表（lsit）
+<br>1.无序列表。 disc默认值|square实心方块|circle空心圆
+<br> <rl>
+<br>       <li>
+<br>
+<br>       </li>
+<br>  </rl>
+<br>2.有序列表 tpye="1|a|A|I"
+<br>  <ol>
+<br>       <li></li>
+<br>      <li></li>
+<br>    </ol>
+<br>3.自定义列表
+<br><dl>
+<br>  <dt> <dd></dd>
+<br></dt>
+<br></dl>
+
+5.行分组
+  <thead></thead>: 行头
+  <tbody></tbody>  行主体
+  <tfoot></tfoot> 尾
+6.表单
+<form action="服务器的动态url地址。php"
+      method="传输方式，get默认 post"
+      name="表单名称">
+      表单
+get 默认值，以名/值对形式在地址栏后面传输。//不安全，短东西可以，明文 http：// user=gene&passwd=123456
+post:以名/值对形式，在http请求头部船体数据。 //安全，并且可以传递大图片。
+
+</form>
+表单元素
+1)单行文本框
+  <input type="text" name="名称" value="值">
+2)复选框
+  <input type="checkbox" name="名称" value="值"> 使用数组的形式存储数据。
+  例如：
+    <label for="">兴趣</label>
+    <input type="checkbox" name="tag[]" value="0" checked="checked">时尚
+    <input type="checkbox" name="tag[]" value="1">科学
+    <input type="checkbox" name="tag[]" value="2">政治
+
+  第三天
+  3）下拉框
+  <select name="" id=""><soption>选择标签</soption></select>
+   a。分组标签
+     <optgroup>分组标签，</optgroup>
+   b.selected="selected" 设置初始值
+
+   c。多选下啦  列表框 写在select 标签中 multiple="multiple" 下啦结果可以多选
+   要求，名称要存成数组。
+   d。 size 显示大小。 文字高度。
+
+
+   4）浏览框
+   使用标准编码传输文件，才能正常。
+    编码enctyp="multipart/form-data"
+      a。method 传输方式必须是post
+        b.form 上添加属性，  编码enctyp="multipart/form-data"
+        c。实现多选. multiple="multiple"  name必须也是数组形式name="pic[]"
+
+
+  5) 多行文本框
+  <textarea name="name" rows="8" cols="80"></textarea>
+6) 按钮
+  <input type="submit" name="">
+  <input type="button">
+  <button></button>
+    提交按钮 直接提交
+    普通按钮 没效果，需要配合javascript使用
+
+    重置按钮 重写
+  7) 隐藏域
+    <input type="hidden" name="name" value="">
+    使用方法，选择哪条数据，他就修改哪条数据。value值。
+
+
+
+    html5
+
+    1.表单

@@ -1,0 +1,49 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  <form action="damo.php" method="post" enctype="multipart/form-data">
+  <div>
+    <h2>注册</h2>
+    <label>注  册:</label>
+    <input type="text"name="zc" placeholder="手机号或邮箱地址">
+  </div>
+  <div>
+    <label >密  码:</label>
+    <input type="password" name="pwd">
+  </div>
+
+  <div>
+  <label for="">兴趣标签</label>
+  <input type="checkbox" name="tag[]" value="0" checked="checked">时尚
+  <input type="checkbox" name="tag[]" value="1">科学
+  <input type="checkbox" name="tag[]" value="2">政治
+  </div>
+  <div>
+    <label >城  市</label>
+    <select name="city" id="city_id">
+      <optgroup label="北方">
+      <option value="0">北京</option>
+      <option value="1">天津</option>
+      </optgroup>
+      <optgroup label="南方">
+      <option value="2">广州</option>
+      <option value="3">深圳</option>
+      </optgroup>
+    </select>
+  <div>
+    <label >照片</label>
+    <input type="file" name="pic" multiple="multiple">
+</div>
+  <label >自我介绍</label>
+  <textarea name="mysilf" rows="8" cols="80"></textarea>
+</div>
+  <div><input type="submit" value="提交注册"></div>
+
+  </form>
+</body>
+</html>
