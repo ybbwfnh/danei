@@ -30,11 +30,19 @@ HL;
 
 //  2.NowDoc
 
+//不会被解析
 
 
+echo "获取其中一个字母<br>";
 
+$var = abefdsad;
+echo $var."<br>";
+echo $var[4];
 
+echo "<hr />实例化对象。";
 
+$obj = new stdClass();
+var_dump($obj);
 
 
 
