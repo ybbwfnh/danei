@@ -6,13 +6,13 @@
         <li>one</li>
         <li>two</li>
         <li>three</li>
-        
+
       </ul>
   ';
   echo $var;
 
   echo '<hr />';
- 
+
   //1.HereDoc
   $abc = '大马猴';
 
@@ -22,10 +22,10 @@
         <li>two</li>
         <li>three</li>
         <li>$abc</li>
-        
+
       </ul>
 HL;
- 
+
  echo $link;
 
 //  2.NowDoc
@@ -44,7 +44,14 @@ echo "<hr />实例化对象。";
 $obj = new stdClass();
 var_dump($obj);
 
+$res = fopen('../note.html','r');
+var_dump($res);
 
 
+echo "声明变量赋予初始值用的，";
+$nu = NULL;
+var_dump($nu);
 
+echo '<br/>';
+echo 12.7 + true + false +'';
 ?>

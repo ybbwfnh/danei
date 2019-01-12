@@ -134,17 +134,17 @@ post:以名/值对形式，在http请求头部船体数据。 //安全，并且�
 
       placeholder : 描述
 
-      
-      
-      
-      
+
+
+
+
       第二阶段。php code
       1.变量
         可变变量
         引用变量
       1。输出，详细信息
         var_dump($var)
-      
+
 
 
 
@@ -187,11 +187,31 @@ $obj = new stdClass(); //实例化对象。
 
 
 
+echo "声明变量赋予初始值用的，";
+$nu = NULL
+var_dump($nu);
 
 
 
+7.php 报错
+ 1.parse error 语法错误
+ 2. <!-- WARNING: 警告错误 -->
+ 3.fatal 致命错误
+ 4.notice 通知行错误。
+说明：
+  php.ini 中
+  display_error   on`
+8.字符转换
+   1.自动转换，转为整型
+     例如：echo 3+'4' //7
+          echo 3+"2g" //5 遇到字母就等于0
+          echo 3+"sf1" //3
+          echo 3+2e2 //2e2等于2的100次蜜，203
+          布尔值，true 转为1，false 转为0
+          null 转为0
+          空字符串转为0
 
-
-
-
-
+          其他类型，转为字符串类型
+          例如；
+          echo 25 ; //"25"
+     2.代码转换
