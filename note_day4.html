@@ -1,0 +1,71 @@
+1. strpos()函数。 找到字符串里的某植
+
+2.多分枝语句
+    1）条件分支语句
+    if单分支语句
+        if（expr条件）{
+            .....
+        }
+        说明：满足条件，执行括号代码块，不满足跳过。
+    if双分支语句
+    if多分之语句
+    if嵌套语句
+    switch 语句
+    2）循环语句
+
+    3）switch语句
+        switch($变量名){
+            case value:
+            ... 
+            break;
+        }
+        说明：a .switch 语句：实现if 多分支语句。
+            b. 半段变量名称等于某个特定的值。
+            c。 case 等同与 == 松散比较
+            d. switch 语句没有结束多分枝语句的功能，所以每句后面都要增加
+                break;结束循环。
+
+            默认值，default:
+
+            switch($week){
+                case 0:
+                    echo '星期日';
+                    break;
+                case 1:
+                    echo '星期一';
+                    break;
+                case 2:
+                    echo '星期二';
+                    break;
+                case 3:
+                    echo '星期三';
+                    break;
+                case 4: 
+                    echo '星期四';
+                    break;
+                case 5:
+                    echo '星期五';
+                    break;
+                case 6:
+                    echo '星期六';
+                    break;
+                default:
+                    echo '超出范围';
+                    break;
+
+                    方式二；
+
+                    $day = 22;
+                switch($day){
+                    case:1;
+                    case:2;
+                    case:3;
+                    case:4;
+                    case:5;
+                    case:6;
+                    case:9;
+                    case:8;
+                    case:7;
+                        echo '上旬';
+                        break;
+                }
