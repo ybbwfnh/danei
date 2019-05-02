@@ -23,7 +23,7 @@
             b. 半段变量名称等于某个特定的值。
             c。 case 等同与 == 松散比较
             d. switch 语句没有结束多分枝语句的功能，所以每句后面都要增加
-                break;结束循环。
+                break;或者 continue结束循环。
 
             默认值，default:
 
@@ -50,7 +50,7 @@
                     echo '星期六';
                     break;
                 default:
-                    echo '超出范围';
+                    die( '超出范围');
                     break;
 
                     方式二；
@@ -69,3 +69,8 @@
                         echo '上旬';
                         break;
                 }
+
+
+    3. get post 传输
+                常用函数 isset 判断变量是否被定义
+                empty:判断变量是和否是空字符串。
