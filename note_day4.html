@@ -79,7 +79,44 @@
                 empty:判断变量是和否是空字符串。
                 案例
                 <a href="get_page.php">分页案例</a>
+4.时间日期函数库
+                1不需要安装，一般核心的需要.ini种安装
+
+                
+                2   要先设置中国时区UTC
+                    或者PRC （中国简称）
+                    或者Asia/Shanghai
+                    或者服务器上配置.ini文件
+                        date.timezone=PRC
+
+                        //设置时区
+                        date_default_timezone_set(PRC);
+                        //日期函数
+                        echo date('Y-m-d H.m.s');
+                        //time()函数
+                        echo time();//从1970年1月1日开始到现在到秒数
+
+                        //三天前的现在
+                        echo date('Y-m-d H.i.s',time()-60*60*24*3);
+                        函数：strtotime 
+                        echo  date('Y-m-d H.i.s',strtotime(3days);
 
 
+5.数学函数库
+                floor: 舍去法向下取整。
+                ceil: 进1法取整。向上取整
+                round: 四舍五入、
+                    格式：round(值，精度)
+                max 最大值
+                min最小值
+                abs绝对值
+                pow 次幂
+                sqrt 开平方
+                rand:获得随机整数 短信验证码估计可以用
+                mt_rand:获得更好的随机整数
+                 例如：mt_rand（10000，99999） // 获得5位数验证码
 
+6. 循环
+                1.for 循环
+                    for(expr1;expr2;)
 </html>

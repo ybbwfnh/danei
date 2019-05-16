@@ -1,7 +1,11 @@
 
 <?php
 // 接收分页数字，且用三元运算判断值是否存在，存在正常接受，不存在赋值第一页
-$curpage= isset($_GET["page"])?$_GET["page"]:1;
+//5.0写法
+//$curpage= isset($_GET["page"])?$_GET["page"]:1;
+
+//7.0写法 
+$curpage = $_GET["page"]??1;
 
 echo $curpage;
 ?>
