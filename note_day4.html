@@ -1,84 +1,85 @@
 
 <!DOCTYPE html>
 <meta http-equiv="X-UA-Compatible" content="text/html"; charset="utf-8">
-1. strpos()函数。 找到字符串里的某植
 
-2.多分枝语句
-    1）条件分支语句
-    if单分支语句
-        if（expr条件）{
-            .....
-        }
-        说明：满足条件，执行括号代码块，不满足跳过。
-    if双分支语句
-    if多分之语句
-    if嵌套语句
-    switch 语句
-    2）循环语句
+<hr>
+2.多分枝语句<br/>
+    1）条件分支语句<br/>
+    if单分支语句<br/>
+        if（expr条件）{<br/>
+            .....<br/>
+        }<br/>
+        说明：满足条件，执行括号代码块，不满足跳过。<br/>
+    if双分支语句<br/>
+    if多分之语句<br/>
+    if嵌套语句<br/>
+    switch 语句<br/>
+    2）循环语句<br/>
 
-    3）switch语句
-        switch($变量名){
-            case value:
-            ... 
-            break;
-        }
-        说明：a .switch 语句：实现if 多分支语句。
-            b. 半段变量名称等于某个特定的值。
-            c。 case 等同与 == 松散比较
-            d. switch 语句没有结束多分枝语句的功能，所以每句后面都要增加
-                break;或者 continue结束循环。
+    3）switch语句<br/>
+        switch($变量名){<br/>
+            case value:<br/>
+            ... <br/>
+            break;<br/>
+        }<br/>
+        说明：a .switch 语句：实现if 多分支语句。<br/>
+            b. 半段变量名称等于某个特定的值。<br/>
+            c。 case 等同与 == 松散比较<br/>
+            d. switch 语句没有结束多分枝语句的功能，所以每句后面都要增加<br/>
+                break;或者 continue结束循环。<br/>
+                <br/>
+            默认值，default:<br/>
 
-            默认值，default:
+            switch($week){<br/>
+                case 0:<br/>
+                    echo '星期日';<br/>
+                    break;<br/>
+                case 1:<br/>
+                    echo '星期一';<br/>
+                    break;<br/>
+                case 2:<br/>
+                    echo '星期二';<br/>
+                    break;<br/>
+                case 3:<br/>
+                    echo '星期三';<br/>
+                    break;<br/>
+                case 4: <br/>
+                    echo '星期四';<br/>
+                    break;<br/>
+                case 5:<br/>
+                    echo '星期五';<br/>
+                    break;<br/>
+                case 6:<br/>
+                    echo '星期六';<br/>
+                    break;<br/>
+                default:<br/>
+                    die( '超出范围');<br/>
+                    break;<br/>
 
-            switch($week){
-                case 0:
-                    echo '星期日';
-                    break;
-                case 1:
-                    echo '星期一';
-                    break;
-                case 2:
-                    echo '星期二';
-                    break;
-                case 3:
-                    echo '星期三';
-                    break;
-                case 4: 
-                    echo '星期四';
-                    break;
-                case 5:
-                    echo '星期五';
-                    break;
-                case 6:
-                    echo '星期六';
-                    break;
-                default:
-                    die( '超出范围');
-                    break;
+                    方式二；<br/>
 
-                    方式二；
-
-                    $day = 22;
-                switch($day){
-                    case:1;
-                    case:2;
-                    case:3;
-                    case:4;
-                    case:5;
-                    case:6;
-                    case:9;
-                    case:8;
-                    case:7;
-                        echo '上旬';
+                    $day = 22;<br/>
+                switch($day){<br/>
+                    case:1;<br/>
+                    case:2;<br/>
+                    case:3;<br/>
+                    case:4;<br/>
+                    case:5;<br/>
+                    case:6;<br/>
+                    case:9;<br/>
+                    case:8;<br/>
+                    case:7;<br/>
+                        echo '上旬';<br/>
                         break;
                 }
-
+                <hr>
 
     3. get post 传输
                 常用函数 isset 判断变量是否被定义
                 empty:判断变量是和否是空字符串。
                 案例
                 <a href="get_page.php">分页案例</a>
+                <hr>
 4.时间日期函数库
                 1不需要安装，一般核心的需要.ini种安装
 
@@ -100,23 +101,13 @@
                         echo date('Y-m-d H.i.s',time()-60*60*24*3);
                         函数：strtotime 
                         echo  date('Y-m-d H.i.s',strtotime(3days);
+                        <hr>
+
+5
 
 
-5.数学函数库
-                floor: 舍去法向下取整。
-                ceil: 进1法取整。向上取整
-                round: 四舍五入、
-                    格式：round(值，精度)
-                max 最大值
-                min最小值
-                abs绝对值
-                pow 次幂
-                sqrt 开平方
-                rand:获得随机整数 短信验证码估计可以用
-                mt_rand:获得更好的随机整数
-                 例如：mt_rand（10000，99999） // 获得5位数验证码
 
-6. 循环
-                1.for 循环
-                    for(expr1;expr2;)
+
+
+
 </html>

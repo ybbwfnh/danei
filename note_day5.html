@@ -1,0 +1,99 @@
+
+
+<!DOCTYPE html>
+<meta http-equiv="X-UA-Compatible" content="text/html"; charset="utf-8">
+1.数学函数库
+                strpos()函数。 找到字符串里的某植
+                floor: 舍去法向下取整。
+                ceil: 进1法取整。向上取整
+                round: 四舍五入、
+                    格式：round(值，精度)
+                max 最大值
+                min最小值
+                abs绝对值
+                pow 次幂
+                sqrt 开平方
+                rand:获得随机整数 短信验证码估计可以用
+                mt_rand:获得更好的随机整数
+                 例如：mt_rand（10000，99999） // 获得5位数验证码
+    字符串函数库
+                strlen() 获取字符串长度
+                substr:字符串截取函数
+                strtolower: 将字符串转为小写
+                strtoupper:将字符串转为大写
+                ucfirst: 把第一个单词的首字母大写
+                ucwords: 每个单词的首字母大写
+                trim: 清楚字符串中两边的空格,也可以清除指定的字符.
+                rtrim: 清除字符串左边的空格,也可以清除制定的字符.
+                ltrim: 清除字符串右边的空格,同上.
+
+                strstr:查找字符串的首次出现
+                stristr:
+                strchr:
+
+                str_replace:字符串替换函数
+                htmlspecialchars:特殊符号转为html实体
+                    说明只能转换<>'  "  & 等
+                    $flag :只处理其中的单引号
+            ** 加密函数
+                1,MD5:计算字符串MD5,散列值.长度32个
+                2,sha1:  长度40个
+
+                strip_tags:去除字符串中标签标记<br>
+                    也可以指定保留标签 <a href="../danei/02_phpcode/04/strip_tags.php">strip_tags</a><br>
+
+                 <hr>
+6. 循环
+                1.for 循环
+                    for(expr1;expr2;expr3;)
+                    省略表达式方法，例如
+                   省略 expr1,无条件执行一次。所以不放（）内，也要放在for前面
+                    并且保留分号；请看<a href="../danei/02_phpcode/04/for.php">for省略（）表达式方法</a>
+                    $=1;
+                    for(;$i <=5;$i++){
+                        echo $i."<br/>"
+                    }
+                省略表达式2
+                    $=1;
+                    for(;;$i++){
+                        if($i>5){
+                            break;
+                        }
+                        echo $i."<br />";
+                    }
+                省略表达式3
+                    $i = 1;
+                    for(;;){
+                        if($i>5){
+                            break;
+                        }
+                        echo $i."<br/>";
+                    }
+
+                    a。for循环条件中，逗号隔开条件，分号隔开表达式。可以写多个条件。<hr>
+7. while 循环
+  do....while 循环
+                    格式：
+                        $i =1;
+                        while($i<1){
+                            echo "hello";
+                            $i++;
+                        }
+  
+                        a。for,while，先判断条件再循环。
+                        b.do  ...while。 当第一个判断条件为假，do...while比 while多执行1次。
+                            查看案例<a href="../danei/02_phpcode/04/while_dowhile.php">查看案例</a>
+                        c.for 一般实现精确循环次数。
+                            while 可以实现不定次数循环
+8. break , continue 区别
+                        a.break 再,switch结束本层循环.
+                        b.continue ,跳过本次循环 <br>
+                        <a href="../danei/02_phpcode/04/break.php">案例</a>
+                        <hr>
+9.随机验证码实现    <a href="../danei/02_phpcode/04/yanzhengma.php">随机验证码案例</a><br />
+
+10.MD5 加密练习:<br>
+ <a href="../danei/02_phpcode/04/md5.php">密码=1234445"</a><br>
+11.strip_tags函数练习,可以保留部分标签截取<a href="../danei/02_phpcode/04/strip_tags.php">strip_tags练习</a><br>
+
+                    </html>
