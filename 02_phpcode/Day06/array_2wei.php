@@ -66,4 +66,6 @@ foreach($arr3 as $val){
 echo "<br>";
 foreach($arr3 as $val){
     echo $val['name'].$val['age'].$val['add'];
+
+    
 }
