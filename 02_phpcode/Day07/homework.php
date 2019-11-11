@@ -108,6 +108,53 @@ function arraymap($fn,$arr){
     }
     return $newarr;
 };
-$arr = array('Hello','WaYne');
+$arr = array(1,2,3,4);
 $a = arraymap('strtoupper',$arr);
 print_r($a);
+echo '<hr>';
+
+//小练习,自定义回调函数的应用.配合上面的使用
+//求平方
+
+$newarr3 = arraymap('getpow',$arr);
+
+
+function getpow($n){
+    return $n*$n;
+}
+print_r($newarr3);
+//JS写法
+$newarr2 = arraymap(function($n){
+    return $n*$n;
+},$arr);
+print_r($newarr2);
+
+
+
+
+echo '<hr />';
+function arraymap2($fn,$arr){
+
+    $array1 = func_get_args();
+    array_shift($rray);
+    echo '<pre>';
+    print_r($array1);
+    echo '</pre>';
+    foreach($array1 as $key=>$val){
+        foreach($val as $k=>$v){
+            $new[$key][$k]= $fn($v);
+        }
+    }
+    return $new;
+}
+
+
+
+$arr1 = array('fsdl','fdsa','feds');
+$arr2 = array(1,2,3,4,5);
+$arr3 = array('one','two');
+
+$new = arraymap2('strtoupper',$arr1,$arr2,$arr3);
+echo '<pre>';
+print_r($new);
+echo '</pre>';
